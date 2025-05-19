@@ -1,6 +1,6 @@
 # Amanda Soares – Landing Page
 
-Personal landing page built using **React**, **TailwindCSS** and **Framer Motion** ✨
+A personal landing page built using **React**, **TailwindCSS** and **Framer Motion** ✨
 
 ## Features
 
