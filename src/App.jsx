@@ -6,6 +6,7 @@ import {
   SiNodedotjs, SiBootstrap, SiMysql, SiPostgresql, SiMongodb, SiGit,
   SiDocker, SiLinux, SiFigma, SiAmazons3
 } from "react-icons/si";
+import { FaArrowDown } from "react-icons/fa";
 import amandaPhoto from "./assets/amanda.jpg";
 import about1 from "./assets/fotoimprensa.jpg";
 import about2 from "./assets/fotoequipe.jpg";
@@ -21,6 +22,8 @@ import sempararImg from "./assets/semparar.jpg";
 import tcrpImg from "./assets/tcrp.jpg";
 import twpImg from "./assets/twp.jpg";
 import maiaImg from "./assets/maia.jpg";
+import facensImg from "./assets/facens.jpg"
+import aspireImg from "./assets/aspire.jpg"
 
 const fadeIn = {
   hidden: { opacity: 0, y: 50 },
@@ -210,65 +213,77 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 gap-12">
             {[{
-              title: "Co-founder of ConsCientistas",
-              text: "Empowered over 5K girls through talks and workshops. Supported by organizations like Força Meninas, inspiring confidence and interest in STEM fields.",
-              href: "https://forcameninas.com.br/conscientistas",
-              img: conscientistasImg,
+              title: "Força Meninas",
+              text: "Software Developer | STEAM Leader",
+              href: "https://frmeninas.com.br",
+              img: frmeninasImg,
               border: "#5e4630"
             }, {
-              title: "Participated in Força Meninas Event",
-              text: "Part of the Força Meninas community focused on empowering girls to believe in their power to change the world.",
-              href: "https://forcameninas.com.br",
-              img: frmeninasImg,
+              title: "Projeto ConsCientistas",
+              text: "Co-founder and Executive Director",
+              href: "https://dev-conscientistas.pantheonsite.io",
+              img: conscientistasImg,
               border: "#944c2e"
             }, {
-              title: "Student at IFSP - Bragança Paulista",
-              text: "Studying engineering with a passion for creating inclusive and transformative technologies.",
-              href: "https://bragancapaulista.ifsp.edu.br/",
-              img: ifImg,
-              border: "#556b2f"
+              title: "Equipe Maia",
+              text: "Management Leader",
+              href: "https://lince.facens.br/maia-mobilidade-aplicada-e-inteligencia-artificial/",
+              img: maiaImg,
+              border: "#206c62"
             }, {
-              title: "InSpace Member",
-              text: "Engaged with space education initiatives and aspiring to contribute to astronautics.",
-              href: "https://www.instagram.com/inspace.project/",
-              img: inspaceImg,
-              border: "#8b5e3c"
-            }, {
-              title: "Volunteer at Instituto Semear",
-              text: "Supporting and mentoring students for academic and personal success through youth empowerment programs.",
-              href: "https://www.institutosemear.org/",
-              img: jovemsementeImg,
-              border: "#9b4f2c"
-            }, {
-              title: "Participant in LALA Program",
-              text: "Took part in the Latin American Leadership Academy program with a focus on leadership, social impact, and collaboration.",
-              href: "https://www.latinamericanleadershipacademy.org/",
-              img: lalaImg,
-              border: "#3e4d3c"
-            }, {
-              title: "Leader of Sem Parar",
-              text: "Led an initiative that teaches girls to hunt asteroids and explore science through fun and educational research.",
-              href: "https://forcameninas.com.br/semparar",
+              title: "Projeto Sem Parar",
+              text: "Astronomy Teacher",
+              href: "https://www.instagram.com/sempararprojeto/",
               img: sempararImg,
               border: "#6e453b"
             }, {
-              title: "The Climate Reality Project",
-              text: "Trained by The Climate Reality Project to advocate for climate action and sustainability.",
-              href: "https://www.climaterealityproject.org/",
+              title: "Centro Universitário Facens",
+              text: "Full-Ride Student | Scientific Initiation Student",
+              href: "https://facens.br",
+              img: facensImg,
+              border: "#6e453b"
+            }, {
+              title: "Instituto Semear",
+              text: "Jovem Semente",
+              href: "https://www.isemear.org.br",
+              img: jovemsementeImg,
+              border: "#9b4f2c"
+            }, {
+              title: "LALA - Latin American Leadership Academy",
+              text: "LALA Alumni | Data Analyst",
+              href: "https://latinamericanleadershipacademy.org",
+              img: lalaImg,
+              border: "#3e4d3c"
+            }, {
+              title: "Instituto Federal do Sul de Minas Gerais",
+              text: "Computer Technician Student",
+              href: "https://portal.ifsuldeminas.edu.br/index.php",
+              img: ifImg,
+              border: "#556b2f"
+            }, {
+              title: "InSpace",
+              text: "Member",
+              href: "https://www.instagram.com/inspace_group/",
+              img: inspaceImg,
+              border: "#8b5e3c"
+            }, {
+              title: "The Climate Reality Leadership Corps",
+              text: "Climate Leader",
+              href: "https://www.climaterealityproject.org",
               img: tcrpImg,
               border: "#1f2937"
             }, {
-              title: "The Wellbeing Project",
-              text: "Involved in the Wellbeing Project to understand how inner wellbeing fuels social change.",
-              href: "https://wellbeing-project.org/",
+              title: "The Wellbeing Project - Ecological Belonging",
+              text: "Student Ambassador",
+              href: "https://www.ecological-belonging.org",
               img: twpImg,
               border: "#206c62"
             }, {
-              title: "Maia",
-              text: "Involved in the Wellbeing Project to understand how inner wellbeing fuels social change.",
-              href: "https://wellbeing-project.org/",
-              img: maiaImg,
-              border: "#206c62"
+              title: "Aspire Institute",
+              text: "Aspire Leaders Program",
+              href: "https://www.aspireleaders.org",
+              img: aspireImg,
+              border: "#e2725b"
               
             }].map((exp, index) => (
               <motion.a
@@ -289,8 +304,30 @@ export default function App() {
               </motion.a>
             ))}
           </div>
+            {/* === CV Button === */}
+            <div className="flex flex-col items-center mt-16 gap-2">
+            <motion.div
+              className="text-[#633e34] text-2xl animate-bounce"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <FaArrowDown />
+              <FaArrowDown className="-mt-3" />
+            </motion.div>
+            <a
+              href="https://docs.google.com/document/d/1wgBJ03zZ7FGN36TZ5iaRbCEFvNXWjDkmmmIduvvUnyQ/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#b36114] text-white font-semibold px-10 py-4 rounded-xl shadow-xl animate-pulse hover:bg-[#8b511afb] transition duration-300"
+            >
+              You can find out more here in my CV
+            </a>
+          </div>
         </div>
       </section>
+      
     </div>
   );
 }
